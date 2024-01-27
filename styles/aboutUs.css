@@ -1,0 +1,40 @@
+.hello{
+    color: var(--accent);
+}
+.menu-text li {
+    margin-left: 50px;
+}
+.flex-row .icons{
+    margin-left: 30px;
+    margin-right: 13px;
+    margin-top: 15px;
+}
+.flex-row p{
+    margin-top: 30px;
+    color: var(--accent);
+}
+.servises-block h1{
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+.servises-block{
+    min-width: 308px;
+    max-height: 301px;
+    border-radius: 15px;
+    background: var(--main);
+}
+.aboutCompany{
+    margin-left: 50px;
+}
+.aboutCompany p{
+    color: var(--main-text);
+}
+.image-place{
+    margin-top: 50px;
+}
+.icon-border{
+    border-radius: 10px;
+}
+.test{
+    margin-left: 35px;
+}
