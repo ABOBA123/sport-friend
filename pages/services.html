@@ -27,8 +27,8 @@
             </div>
         </header>
         <div class="menu-indent">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" >
+                <div style="display: none;">
                     <h1>Свяжитесь с нами!</h1>
                     <p>Здесь вы найдете всю необходимую информацию для связи с нашей компанией.
                         Мы стремимся к тому,чтобы наше сотрудничество было максимально комфортным
@@ -50,14 +50,21 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contacts-data">
-                    <h4>Как Вас зовут?</h3>
-                    <input class="main-input" type="text" placeholder="text">
-                    <h4>e-mail</h4>
+                    <div input-group="true" class="input-group">
+                        <h4>Как Вас зовут?</h3>
+                        <input class="main-input" type="text">
+                    </div>
+                    <div input-group="true" class="input-group">
+                        <h4>e-mail</h4>
+                        <input class="main-input" type="text">
+                    </div>
+                   
                     <input class="main-input" type="text" placeholder="text">
                     <h4>Телефон</h4>
                     <input class="main-input" type="text" placeholder="text">
                     <h4>Комментарий</h4>
-                    <input class="second-input" type="text">
+                    <textarea class="second-input comment-input"></textarea>
+                    <!-- <input class="second-input" type="text"> -->
                     <button class="blue-button send">Отправить</button>
                 </div>
             </div>
@@ -103,6 +110,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="../scripts/input.js"></script>
+
 </body>
 
 </html>

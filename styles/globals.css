@@ -147,3 +147,33 @@ body{
 .footer-top{
     margin-top: 300px;
 }
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    margin: 0.7rem 0;
+
+}
+
+.input-group.active h4{
+    top: -80%;
+    left: 15px;
+    background: white;
+    padding: 4px 2px;
+}
+
+.input-group h4{
+    position: absolute;
+}
+
+.input-group input{
+    outline: none;
+    transition: all 0.15s;
+}
+
+.input-group.active input{
+    border: 1px solid black;
+}

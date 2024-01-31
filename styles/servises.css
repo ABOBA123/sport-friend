@@ -21,7 +21,7 @@
     border: none;
 }
 .contacts-data{
-    width: 100%;
+    width: 50%;
     margin-left: 60px;
 }
 .send{
@@ -30,3 +30,8 @@
 .footer{
     margin-top: 100px;
 }
+
+.comment-input{
+    max-width: 100%;
+}
+
