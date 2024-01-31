@@ -1,15 +1,11 @@
-.hello{
-    color: var(--accent);
-}
-.menu-text li {
-    margin-left: 50px;
-}
-.flex-row .icons{
+
+/* первый */
+.icons{
     margin-left: 30px;
     margin-right: 13px;
     margin-top: 15px;
 }
-.flex-row p{
+.text-style p{
     margin-top: 30px;
     color: var(--accent);
 }
@@ -21,7 +17,11 @@
     min-width: 308px;
     max-height: 301px;
     border-radius: 15px;
+    position: fixed;
     background: var(--main);
+}
+.imaginary-servises-block{
+    padding-left: 308px;
 }
 .aboutCompany{
     margin-left: 50px;
@@ -35,6 +35,4 @@
 .icon-border{
     border-radius: 10px;
 }
-.test{
-    margin-left: 35px;
-}
+

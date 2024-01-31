@@ -32,6 +32,9 @@ body{
 .menu-indent{
     padding-top: 110px;
 }
+.menu-text li {
+    margin-left: 50px;
+}
 .menu{
     width: 1340px;
     height: 72px;
@@ -74,6 +77,10 @@ body{
     color: var(--third-text);
     font-size: var(--font-rt);
 }
+.black-span{
+    color: var(--third-text);
+    font-weight: var(--font-bold);
+}
 .list-none{
     list-style: none;
 }
@@ -102,4 +109,41 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.test{
+    margin-left: 35px;
+}
+.blue-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--bg);
+    font-weight: var(--font-bold);
+    background-color: var(--accent);
+    border: none;
+}
+.color-black{
+    color: var(--third-text);
+}
+.information-tasks{
+    padding-left: 20px;
+    padding-bottom: 100px;
+    color: var(--accent);
+}
+.information-tasks li{
+    margin-top: 20px;
+}
+.disk{
+    list-style-type: circle;
+    margin-left: 20px;
+}
+.m-auto{
+    text-align: center;
+}
+.content-center{
+    display: flex;
+    justify-content: center;
+}
+.footer-top{
+    margin-top: 300px;
 }

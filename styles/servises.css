@@ -1,0 +1,32 @@
+.data{
+    margin-right: 20px;
+}
+.map{
+    border-radius: 15px;
+    height: 310px;
+}
+.main-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+    background: var(--main);
+    border: none;
+}
+.second-input{
+    width: 100%;
+    height: 130px;
+    background: var(--main);
+    padding-top: 0;
+    border: none;
+}
+.contacts-data{
+    width: 100%;
+    margin-left: 60px;
+}
+.send{
+    margin-top: 30px;
+}
+.footer{
+    margin-top: 100px;
+}
