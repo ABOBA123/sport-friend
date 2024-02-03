@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <div class="container color-black">
+    <div class="container">
         <header class="menu flex-row-center">
             <div class="flex-row-center">
                 <img class="ShariX-icon" src="../images/sharix-logo 1.svg" alt="sharix-logo">
-                <p class="black-text">ShariX OpenTemplate</p>
+                <p>ShariX OpenTemplate</p>
             </div>
             <div class="flex-row-center">
-                <ul class="menu-text">
-                    <li>О нас</li>
-                    <li>Услуги</li>
-                    <li>Партнерам</li>
-                    <li>Контакты</li>
+                <ul class="menu-text decoration-none">
+                    <a href="../pages/AboutUs.html"><li>О нас</li></a>
+                    <a href="../pages/Contacts.html"><li>Услуги</li></a>
+                    <a href="../pages/Partners.html"><li>Партнерам</li></a>
+                    <a href="../pages/services.html"><li>Контакты</li></a>
                 </ul>
                 <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
             </div>
@@ -30,7 +30,7 @@
             <div class="flex-row adaptive-992">
                 <div>
                     <h1>Свяжитесь с нами!</h1>
-                    <p>Здесь вы найдете всю необходимую информацию для связи с нашей компанией.
+                    <p class="contacts-text">Здесь вы найдете всю необходимую информацию для связи с нашей компанией.
                         Мы стремимся к тому,чтобы наше сотрудничество было максимально комфортным
                          и продуктивным для всех наших клиентов и
                         партнеров.</p>
@@ -51,26 +51,25 @@
                 </div>
                 <div class="contacts-data">
                     <div input-group="true" class="input-group">
-                        <h4>Как Вас зовут?</h3>
+                        <p>Name</p>
                         <input class="main-input" type="text">
                     </div>
                     <div input-group="true" class="input-group">
-                        <h4>e-mail</h4>
+                        <p>e-mail</p>
                         <input class="main-input" type="text">
                     </div>
                    
                     <input class="main-input" type="text" placeholder="text">
-                    <h4>Телефон</h4>
+                    <p>Телефон</p>
                     <input class="main-input" type="text" placeholder="text">
-                    <h4>Комментарий</h4>
+                    <p>Комментарий</p>
                     <textarea class="second-input comment-input"></textarea>
-                    <!-- <input class="second-input" type="text"> -->
                     <button class="blue-button send">Отправить</button>
                 </div>
             </div>
         </div>
         <footer class="footer">
-            <div class="flex-row content-between ">
+            <div class="flex-row content-between content-around">
                 <div class="flex-column">
                     <h4 class="test">О компании</h4>
                     <ul class="list-none footer-text">
@@ -106,7 +105,7 @@
             </div>
             <div class="text-center footer-row">
                 <p>2023 © powered by</p>
-                <img src="../images/sharix-footer-logo.svg" alt="sharix-footer-logo">
+                <img class="footer-image-margin" src="../images/sharix-footer-logo.svg" alt="sharix-footer-logo">
             </div>
         </footer>
     </div>

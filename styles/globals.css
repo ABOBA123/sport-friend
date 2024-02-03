@@ -6,7 +6,7 @@
 
     --main-text: #3C3C3C;
     --second-text: #7E7E7E;
-    --third-text: #000000;
+    /* --third-text: #000000; */
 
     --font-xl: 36px;
     --font-rt: 24px;
@@ -73,14 +73,6 @@ body{
     font-size: var(--font-xl);
     font-weight: var(--font-bold);
 }
-.black-text{
-    color: var(--third-text);
-    font-size: var(--font-rt);
-}
-.black-span{
-    color: var(--third-text);
-    font-weight: var(--font-bold);
-}
 .list-none{
     list-style: none;
 }
@@ -96,6 +88,9 @@ body{
 }
 .footer{
     margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: var(--main);
 }
 .footer-text{
     color: var(--second-text);
@@ -111,19 +106,25 @@ body{
     justify-content: center;
 }
 .test{
-    margin-left: 35px;
+    margin-left: 40px;
 }
 .blue-button{
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
+    width: 158px;
+    height: 35px;
+    border-radius: 6px;
     color: var(--bg);
-    font-weight: var(--font-bold);
+    font-size: var(--font-sm);
+    font-weight: var(--font-thin);
     background-color: var(--accent);
     border: none;
 }
-.color-black{
-    color: var(--third-text);
+.partners-content{
+    justify-content: space-between;
+    margin-bottom: 308px;
+}
+.partners-text{
+    width: 645px;
+    line-height: 1.9;
 }
 .information-tasks{
     padding-left: 20px;
@@ -178,6 +179,20 @@ body{
     border: 1px solid black;
 }
 
+.footer-image-margin{
+    margin-left: 10px;
+}
+
+.contacts-text{
+    width: 705px;
+}
+.content-around{
+    justify-content: space-around;
+}
+.decoration-none a{
+    color: inherit;
+    text-decoration: none;
+}
 @media screen and (max-width: 992px) {
     .flex-row.adaptive-992{
         display: flex;
