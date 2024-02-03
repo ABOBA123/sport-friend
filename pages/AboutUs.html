@@ -13,6 +13,13 @@
 <body>
     <div class="slide">
         <div class="container">
+            <div class="under-header flex-row">
+                <div>
+                    <h1>Место для слогана. Или описания в 5 словах</h1>
+                    <p>Cервис для организации досуга спортивной направленности</p>
+                </div>
+                <img src="../images/two-persons.png" alt="two-persons">
+            </div>
             <header class="menu flex-row-center">
                 <div class="flex-row-center">
                     <img class="ShariX-icon" src="../images/sharix-logo 1.svg" alt="sharix-logo">
@@ -20,15 +27,23 @@
                 </div>
                 <div class="flex-row-center">
                     <ul class="menu-text decoration-none">
-                        <a href="../pages/AboutUs.html"><li>О нас</li></a>
-                        <a href="../pages/Contacts.html"><li>Услуги</li></a>
-                        <a href="../pages/Partners.html"><li>Партнерам</li></a>
-                        <a href="../pages/services.html"><li>Контакты</li></a>
+                        <a class="cursor-pointer" href="../pages/AboutUs.html">
+                            <li>О нас</li>
+                        </a>
+                        <a class="cursor-pointer" href="../pages/Contacts.html">
+                            <li>Услуги</li>
+                        </a>
+                        <a class="cursor-pointer" href="../pages/Partners.html">
+                            <li>Партнерам</li>
+                        </a>
+                        <a class="cursor-pointer" href="../pages/services.html">
+                            <li>Контакты</li>
+                        </a>
                     </ul>
                     <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
                 </div>
             </header>
-            <div class="flex-row menu-indent ">
+            <div class="flex-row">
                 <div class="servises-block">
                     <h1 class="title ">Услуги</h1>
                     <div class="flex-row text-style">
@@ -44,7 +59,7 @@
                         <p>Занятие с тренером</p>
                     </div>
                 </div>
-                <div class="aboutCompany imaginary-servises-block">
+                <div class="aboutCompany ">
                     <h1>О компании</h1>
                     <p>В данном разделе должны быть представлены основные сведения о компании, ее история, миссия, цели
                         и ценности. Также можно упомянуть основные достижения и проекты, в которых участвовала компания,
@@ -78,10 +93,10 @@
                 </div>
             </div>
             <footer class="footer">
-                <div class="flex-row content-between content-around">
-                    <div class="flex-column">
+                <div class="flex-row content-between content-around ">
+                    <div class="flex-column ">
                         <h4 class="test">О компании</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Партнерам</li>
                             <li>Услуги</li>
                             <li>Контакты</li>
@@ -89,15 +104,15 @@
                     </div>
                     <div class="flex-column">
                         <h4 class="test">О сервисе</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer decoration-none">
                             <li>Преимущества</li>
-                            <li>Правовая информация</li>
+                            <a href="../footer-pages/LegalInformation.html"><li>Правовая информация</li></a>
                             <li>Правила оказания услуг</li>
                         </ul>
                     </div>
                     <div class="flex-column">
                         <h4 class="test">Услуги</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Напарник на тренировку</li>
                             <li>Компания на тренировку</li>
                             <li>Занятия с тренером</li>
@@ -105,7 +120,7 @@
                     </div>
                     <div class="flex-column">
                         <h4 class="test">О приложении</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Скачать приложение</li>
                             <li>Подключиться</li>
                             <li>Войти</li>

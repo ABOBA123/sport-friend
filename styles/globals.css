@@ -29,9 +29,6 @@ body{
     margin: auto;
     position: relative;
 }
-.menu-indent{
-    padding-top: 110px;
-}
 .menu-text li {
     margin-left: 50px;
 }
@@ -40,8 +37,10 @@ body{
     height: 72px;
     border-radius: 10px;
     margin-bottom: 50px;
+    z-index: 1;
+    top: 0;
     background: var(--main);
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
 }
 .menu-text{
@@ -108,16 +107,25 @@ body{
 .test{
     margin-left: 40px;
 }
-.blue-button{
+.unactive-button{
     width: 158px;
     height: 35px;
     border-radius: 6px;
-    color: var(--bg);
+    transition: 0.3s all;
     font-size: var(--font-sm);
-    font-weight: var(--font-thin);
-    background-color: var(--accent);
+    color: var(--bg);
+    background-color: var(--second-text);
     border: none;
 }
+.unactive-button:hover{
+    background-color: #2C64BF;
+}
+.unactive-button.blue-button{
+    background-color: var(--accent);
+}
+.unactive-button:active {
+    background-color: #1D4685;
+  }
 .partners-content{
     justify-content: space-between;
     margin-bottom: 308px;
@@ -159,24 +167,22 @@ body{
 
 }
 
-.input-group.active h4{
-    top: -80%;
-    left: 15px;
-    background: white;
+.input-group{
+    margin-bottom: 65px;
+}
+.input-group.active p{
+    top: -90%;
     padding: 4px 2px;
 }
 
-.input-group h4{
+.input-group p{
+    margin-left: 10px;
     position: absolute;
 }
 
 .input-group input{
     outline: none;
-    transition: all 0.15s;
-}
-
-.input-group.active input{
-    border: 1px solid black;
+    transition: all 2s;
 }
 
 .footer-image-margin{
@@ -192,6 +198,9 @@ body{
 .decoration-none a{
     color: inherit;
     text-decoration: none;
+}
+.cursor-pointer{
+    cursor: pointer;
 }
 @media screen and (max-width: 992px) {
     .flex-row.adaptive-992{

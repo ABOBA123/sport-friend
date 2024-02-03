@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/Contacts.css">
     <title>Document</title>
 </head>
-
+<script src="../scripts/button.js" defer></script>
 <body>
     <div class="container">
         <header class="menu flex-row-center">
@@ -18,15 +18,23 @@
             </div>
             <div class="flex-row-center">
                 <ul class="menu-text decoration-none">
-                    <a href="../pages/AboutUs.html"><li>О нас</li></a>
-                    <a href="../pages/Contacts.html"><li>Услуги</li></a>
-                    <a href="../pages/Partners.html"><li>Партнерам</li></a>
-                    <a href="../pages/services.html"><li>Контакты</li></a>
+                    <a class="cursor-pointer" href="../pages/AboutUs.html">
+                        <li>О нас</li>
+                    </a>
+                    <a class="cursor-pointer" href="../pages/Contacts.html">
+                        <li>Услуги</li>
+                    </a>
+                    <a class="cursor-pointer" href="../pages/Partners.html">
+                        <li>Партнерам</li>
+                    </a>
+                    <a class="cursor-pointer" href="../pages/services.html">
+                        <li>Контакты</li>
+                    </a>
                 </ul>
                 <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
             </div>
         </header>
-        <div class="menu-indent">
+        <div>
             <h1>Уважаемые господа!</h1>
             <p>Здесь можно описать основные направления деятельности компании, перечень услуг, которые она оказывает, а
                 также примеры проектов, выполненных компанией в рамках этих услуг. Важно, чтобы информация была
@@ -64,10 +72,10 @@
                 </tbody>
             </table>
             <footer class="footer">
-                <div class="flex-row content-between content-around">
-                    <div class="flex-column">
+                <div class="flex-row content-between content-around ">
+                    <div class="flex-column ">
                         <h4 class="test">О компании</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Партнерам</li>
                             <li>Услуги</li>
                             <li>Контакты</li>
@@ -75,15 +83,15 @@
                     </div>
                     <div class="flex-column">
                         <h4 class="test">О сервисе</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer decoration-none">
                             <li>Преимущества</li>
-                            <li>Правовая информация</li>
+                            <a href="../footer-pages/LegalInformation.html"><li>Правовая информация</li></a>
                             <li>Правила оказания услуг</li>
                         </ul>
                     </div>
                     <div class="flex-column">
                         <h4 class="test">Услуги</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Напарник на тренировку</li>
                             <li>Компания на тренировку</li>
                             <li>Занятия с тренером</li>
@@ -91,7 +99,7 @@
                     </div>
                     <div class="flex-column">
                         <h4 class="test">О приложении</h4>
-                        <ul class="list-none footer-text">
+                        <ul class="list-none footer-text cursor-pointer">
                             <li>Скачать приложение</li>
                             <li>Подключиться</li>
                             <li>Войти</li>
