@@ -35,11 +35,16 @@ body{
 .menu{
     width: 1340px;
     height: 72px;
+
     border-radius: 10px;
     margin-bottom: 50px;
-    z-index: 1;
-    top: 0;
+    
     background: var(--main);
+
+    /* position: fixed; */
+    top: 0;
+    /* left: 0; */
+    z-index: 1;
     position: sticky;
     justify-content: space-between;
 }
@@ -183,6 +188,13 @@ body{
 .input-group input{
     outline: none;
     transition: all 2s;
+}
+
+.input-group .error-input{
+    position: absolute;
+    bottom: -70%;
+    left: 2%;
+    color: red;
 }
 
 .footer-image-margin{

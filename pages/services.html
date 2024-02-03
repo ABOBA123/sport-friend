@@ -58,17 +58,20 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contacts-data">
-                    <div input-group="true" class="input-group">
-                        <p >Name</p>
-                        <input class="main-input" type="text">
+                    <div id="name" input-group="true" class="input-group">
+                        <p>Name</p>
+                        <input autocomplete="off" class="main-input" type="text">
+                        <label class="error-input"></label>
                     </div>
-                    <div input-group="true" class="input-group">
+                    <div id="email" input-group="true" class="input-group">
                         <p>e-mail</p>
-                        <input class="main-input" type="text">
+                        <input autocomplete="off" id="email" class="main-input" type="text">
+                        <label class="error-input"></label>
                     </div>
-                    <div input-group="true" class="input-group">
-                        <p >phone</p>
-                        <input class="main-input" type="text">
+                    <div id="phone" input-group="true" class="input-group">
+                        <p>phone</p>
+                        <input autocomplete="off" id="phone" class="main-input" type="text">
+                        <label class="error-input"></label>
                     </div>
                     <p>Комментарий</p>
                     <textarea class="second-input comment-input"></textarea>
@@ -119,6 +122,7 @@
     </div>
 
     <script src="../scripts/input.js"></script>
+    <script src="../scripts/service.js"></script>
 
 </body>
 
