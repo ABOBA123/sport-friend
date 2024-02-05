@@ -1,17 +1,27 @@
 
-/* первый */
 .icons{
-    margin-left: 30px;
-    margin-right: 13px;
-    margin-top: 15px;
+    width: 20px;
+    margin-right: 10px;
 }
 .text-style p{
-    margin-top: 30px;
     color: var(--accent);
 }
 .servises-block h1{
     margin-left: 30px;
     margin-bottom: 0;
+}
+.button-selection {
+    width: 270px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 15px;
+    transition: 0.3s all;
+}
+
+.button-selection:hover{
+        background-color: #EBF5FE;
 }
 
 .service-wrapper{
@@ -22,8 +32,8 @@
     width: 308px;
     height: 301px;
     border-radius: 15px;
+    top: 120px;
     position: sticky;
-    top: 90px;
     background: var(--main);
 }
 .aboutCompany{

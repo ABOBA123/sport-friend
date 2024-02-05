@@ -6,6 +6,7 @@
 
     --main-text: #3C3C3C;
     --second-text: #7E7E7E;
+    --danger-text: #EF3232;
     /* --third-text: #000000; */
 
     --font-xl: 36px;
@@ -24,6 +25,9 @@ body{
     margin: 0;
     padding: 0;
 }
+p{
+    line-height: 1.9;
+}
 .container{
     width: 1340px;
     margin: auto;
@@ -41,12 +45,15 @@ body{
     
     background: var(--main);
 
-    /* position: fixed; */
-    top: 0;
-    /* left: 0; */
+    top: 25px;
+
     z-index: 1;
     position: sticky;
     justify-content: space-between;
+}
+.sharix-menu-text{
+    font-size: var(--font-rt);
+    font-weight: var(--font-thin);
 }
 .menu-text{
     list-style: none;
@@ -113,13 +120,17 @@ body{
     margin-left: 40px;
 }
 .unactive-button{
-    width: 158px;
+    width: 129px;
     height: 35px;
     border-radius: 6px;
     transition: 0.3s all;
     font-size: var(--font-sm);
+    font-weight: var(--font-bold);
+    /* font-size: 14px;
+    font-weight: 700; */
+    letter-spacing: 0.4px;
     color: var(--bg);
-    background-color: var(--second-text);
+    background-color: #C5C5C5;
     border: none;
 }
 .unactive-button:hover{
@@ -176,7 +187,10 @@ body{
     margin-bottom: 65px;
 }
 .input-group.active p{
-    top: -90%;
+    top: -100%;
+    left: -2%;
+    font-weight: 700;
+    color: var(--main-text);
     padding: 4px 2px;
 }
 
@@ -186,17 +200,28 @@ body{
 }
 
 .input-group input{
-    outline: none;
-    transition: all 2s;
+    border: 1px solid var(--second-text);
+}
+.input-group input:focus{
+    border: none;
+    outline: var(--accent) 1px solid;
 }
 
 .input-group .error-input{
     position: absolute;
     bottom: -70%;
-    left: 2%;
-    color: red;
+    color: var(--danger-text);
 }
-
+.second-input{
+    width: 100%;
+    min-height: 126px;
+    border-radius: 6px;
+    resize: none;
+}
+.second-input:focus{
+    border: none;
+    outline: var(--accent) 1px solid;
+}
 .footer-image-margin{
     margin-left: 10px;
 }
