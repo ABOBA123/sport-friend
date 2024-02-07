@@ -1,31 +1,44 @@
-table {
+.data{
+    margin-right: 10px;
+}
+.map{
+    border-radius: 15px;
+    height: 310px;
+}
+.main-input{
     width: 100%;
-    margin-top: 60px;
-    margin-bottom: 150px;
-    border-collapse: collapse;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 10px;
+    background: var(--main);
+    border: none;
 }
-th, td {
-    padding: 20px;
-    text-align: start;
+.email-margin{
+    margin-right: 25px;
 }
-.Service{
-    margin-right: 400px;
-    padding-left: 60px;
-    white-space: nowrap;
-    vertical-align: top;
+.second-input{
+    width: 99%;
+    height: 130px;
+    background: var(--main);
+    padding-top: 0;
 }
-.actice-table {
-    border: 1px solid transparent;
-    transition: border 0.9s ease; 
+.contacts-data{
+    width: 585px;
+    margin-left: 60px;
+    padding-top: 20px;
+}
+.send{
+    margin-top: 30px;
+}
+.footer{
+    margin-top: 100px;
+}
+.comment-input{
+    max-width: 100%;
+}
+.deranged-data{
+    width: 700px;
 }
 
-.actice-table:hover {
-    border: 1px solid var(--accent);
-}
 
-.clarification {
-    color: var(--second-text);
-}
-.numbers{
-    vertical-align: top;
-}
+

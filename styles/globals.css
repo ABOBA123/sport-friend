@@ -7,7 +7,6 @@
     --main-text: #3C3C3C;
     --second-text: #7E7E7E;
     --danger-text: #EF3232;
-    /* --third-text: #000000; */
 
     --font-xl: 36px;
     --font-rt: 24px;
@@ -16,6 +15,9 @@
 
     --font-bold: 700;
     --font-thin: 400;
+}
+h1{
+    font-size: var(--font-xl);
 }
 body{
     color: var(--main-text);
@@ -45,7 +47,7 @@ p{
     
     background: var(--main);
 
-    top: 25px;
+    top: 20px;
 
     z-index: 1;
     position: sticky;
@@ -126,8 +128,6 @@ p{
     transition: 0.3s all;
     font-size: var(--font-sm);
     font-weight: var(--font-bold);
-    /* font-size: 14px;
-    font-weight: 700; */
     letter-spacing: 0.4px;
     color: var(--bg);
     background-color: #C5C5C5;
@@ -187,7 +187,7 @@ p{
     margin-bottom: 65px;
 }
 .input-group.active p{
-    top: -100%;
+    top: -110%;
     left: -2%;
     font-weight: 700;
     color: var(--main-text);

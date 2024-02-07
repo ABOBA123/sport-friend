@@ -1,6 +1,7 @@
 
 .icons{
     width: 20px;
+    margin-top: 15px;
     margin-right: 10px;
 }
 .text-style p{
@@ -22,6 +23,17 @@
 
 .button-selection:hover{
         background-color: #EBF5FE;
+}
+.button-selection:active{
+    background: #479FF8;
+
+}
+.button-selection p:active{
+    color: white;
+    fill: white;
+}
+.button-selection img:active{
+    fill: white;
 }
 
 .service-wrapper{
