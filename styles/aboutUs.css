@@ -1,9 +1,9 @@
-
+/* 
 .icons{
     width: 20px;
     margin-top: 15px;
     margin-right: 10px;
-}
+} */
 .text-style p{
     color: var(--accent);
 }
@@ -14,15 +14,24 @@
 .button-selection {
     width: 270px;
     height: 50px;
+
     margin-left: 15px;
     margin-top: 15px;
-    border-radius: var(--br-md);
     padding-left: 15px;
+
+    border-radius: var(--br-md);
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
     transition: 0.3s all;
+
+    background: none;
 }
 
 .button-selection svg{
-    margin-top: 15px;
     margin-right: 10px;
 }
 
@@ -39,6 +48,7 @@
 
 .button-selection p{
     transition: 0.3s all;
+    font-size: var(--font-md);
 }
 
 .button-selection:active p{

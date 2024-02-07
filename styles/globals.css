@@ -7,6 +7,10 @@
     --main-text: #3C3C3C;
     --second-text: #7E7E7E;
     --danger-text: #EF3232;
+    --blue-text: #2C64BF;
+    --dark-blue-text: #1D4685;
+    --unActive: #C5C5C5;;
+
 
     --font-xl: 36px;
     --font-rt: 24px;
@@ -21,6 +25,10 @@
     --br-xl: 15px;
     --br-md: 10px;
     --br-sm: 6px;
+
+    /* border */
+
+    --input-border: #D8D8D8;
 
     /* margin */
 
@@ -145,17 +153,17 @@ p{
     font-weight: var(--font-bold);
     letter-spacing: 0.4px;
     color: var(--bg);
-    background-color: #C5C5C5;
+    background-color: var(--unActive);
     border: none;
 }
 .unactive-button:hover{
-    background-color: #2C64BF;
+    background-color: var(--blue-text);
 }
 .unactive-button.blue-button{
     background-color: var(--accent);
 }
 .unactive-button:active {
-    background-color: #1D4685;
+    background-color: var(--dark-blue-text);
   }
 .partners-content{
     justify-content: space-between;
@@ -215,7 +223,7 @@ p{
 }
 
 .input-group input{
-    border: 1px solid var(--second-text);
+    border: 1px solid var(--input-border);
 }
 .input-group input:focus{
     border: none;

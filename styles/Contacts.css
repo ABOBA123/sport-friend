@@ -20,6 +20,7 @@
     width: 99%;
     height: 130px;
     background: var(--main);
+    border: solid 1px var(--input-border);
     padding-top: 0;
 }
 .contacts-data{
