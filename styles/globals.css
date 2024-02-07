@@ -15,11 +15,26 @@
 
     --font-bold: 700;
     --font-thin: 400;
+
+    /* border-radius */
+
+    --br-xl: 15px;
+    --br-md: 10px;
+    --br-sm: 6px;
+
+    /* margin */
+
+    --m-4xl: 50px;
+    --m-3xl: 40px;
+    --m-2xl: 30px;
+    --m-xl: 20px;
+    --m-md: 15px;
+    --m-sm: 10px;
 }
 h1{
     font-size: var(--font-xl);
 }
-body{
+body{    
     color: var(--main-text);
     background: var(--bg);
     font-family: 'Open Sans', sans-serif;
@@ -42,7 +57,7 @@ p{
     width: 1340px;
     height: 72px;
 
-    border-radius: 10px;
+    border-radius: var(--br-md);
     margin-bottom: 50px;
     
     background: var(--main);
@@ -102,7 +117,7 @@ p{
 .footer{
     margin-top: 50px;
     margin-bottom: 25px;
-    border-radius: 10px;
+    border-radius: var(--br-md);
     background-color: var(--main);
 }
 .footer-text{
@@ -124,7 +139,7 @@ p{
 .unactive-button{
     width: 129px;
     height: 35px;
-    border-radius: 6px;
+    border-radius: var(--br-sm);
     transition: 0.3s all;
     font-size: var(--font-sm);
     font-weight: var(--font-bold);
@@ -215,7 +230,7 @@ p{
 .second-input{
     width: 100%;
     min-height: 126px;
-    border-radius: 6px;
+    border-radius: var(--br-sm);
     resize: none;
 }
 .second-input:focus{

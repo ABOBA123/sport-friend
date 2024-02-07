@@ -16,9 +16,18 @@
     height: 50px;
     margin-left: 15px;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: var(--br-md);
     padding-left: 15px;
     transition: 0.3s all;
+}
+
+.button-selection svg{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.button-selection:active svg > path{
+    fill: white;
 }
 
 .button-selection:hover{
@@ -26,13 +35,14 @@
 }
 .button-selection:active{
     background: #479FF8;
+}
 
+.button-selection p{
+    transition: 0.3s all;
 }
-.button-selection p:active{
+
+.button-selection:active p{
     color: white;
-    fill: white;
-}
-.button-selection img:active{
     fill: white;
 }
 
@@ -43,7 +53,7 @@
 .servises-block{
     width: 308px;
     height: 301px;
-    border-radius: 15px;
+    border-radius: var(--br-xl);
     top: 120px;
     position: sticky;
     background: var(--main);
@@ -56,7 +66,7 @@
     color: var(--main-text);
 }
 .icon-border{
-    border-radius: 10px;
+    border-radius: var(--br-md);
 }
 .under-header{
     width: 100%;
@@ -72,7 +82,7 @@ figure.sixteen-nine-img {
     position: relative;
     
     background: linear-gradient(288.75deg, #595959 2.2%, #3C3C3C 78.38%);
-    border-radius: 15px;
+    border-radius: var(--br-xl);
 }
 figure.sixteen-nine-img img {
     position: absolute;
@@ -87,7 +97,7 @@ figure.sixteen-nine-img img {
     height: 256px;
 
     background: linear-gradient(288.75deg, #595959 2.2%, #3C3C3C 78.38%);
-    border-radius: 15px;
+    border-radius: var(--br-xl);
 
     overflow: hidden;
 }

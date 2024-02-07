@@ -2,13 +2,13 @@
     margin-right: 10px;
 }
 .map{
-    border-radius: 15px;
+    border-radius: var(--br-xl);
     height: 310px;
 }
 .main-input{
     width: 100%;
     height: 40px;
-    border-radius: 6px;
+    border-radius: var(--br-sm);
     padding-left: 10px;
     background: var(--main);
     border: none;
