@@ -7,7 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/globals.css">
 </head>
-
+<style>
+    figure.sixteen-nine-img {
+    width: 100%;
+    overflow: hidden;
+    height: 363px;
+    position: relative;
+    
+    background: linear-gradient(288.75deg, #595959 2.2%, #3C3C3C 78.38%);
+    border-radius: var(--br-xl);
+}
+figure.sixteen-nine-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+</style>
 <body>
     <div class="container">
         <header class="menu flex-row-center">
@@ -37,16 +54,23 @@
             <div class="flex-row partners-content" style="justify-content: space-between; margin-bottom: 308px;">
                 <div>
                     <h1>Партнерам</h1>
-                    <p class="partners-text">Тут стоит рассказать о преимуществах сотрудничества с компанией, о том, какие возможности она
+                    <p class="partners-text">Тут стоит рассказать о преимуществах сотрудничества с компанией, о том,
+                        какие возможности она
                         предоставляет своим партнерам и какие выгоды они могут получить, работая с ней. Важно, чтобы
-                        информация была представлена в понятной форме и давала полное представление о том, как компания строит свои
+                        информация была представлена в понятной форме и давала полное представление о том, как компания
+                        строит свои
                         партнерские отношения и какие преимущества они могут принести. Также можно указать контактную
-                        информацию для связи с отделом по работе с партнерами и описать процедуры по заключению партнерских
+                        информацию для связи с отделом по работе с партнерами и описать процедуры по заключению
+                        партнерских
                         соглашений.
                     </p>
-                    <button class="blue-button unactive-button cursor-pointer">Подключиться</button>
+                    <div style="width: 100%; display: flex; justify-content: end;">
+                        <button class="blue-button unactive-button cursor-pointer">Подключиться</button>
+                    </div>
                 </div>
-                <img src="../images/image-place-partners.png" alt="image-place-partners">
+                <figure class="sixteen-nine-img">
+                    <img alt="image-place">
+                </figure>
             </div>
         </div>
         <footer class="footer">
@@ -63,7 +87,9 @@
                     <h4 class="test">О сервисе</h4>
                     <ul class="list-none footer-text cursor-pointer decoration-none">
                         <li>Преимущества</li>
-                        <a href="../footer-pages/LegalInformation.html"><li>Правовая информация</li></a>
+                        <a href="../footer-pages/LegalInformation.html">
+                            <li>Правовая информация</li>
+                        </a>
                         <li>Правила оказания услуг</li>
                     </ul>
                 </div>
