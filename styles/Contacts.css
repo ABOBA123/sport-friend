@@ -27,6 +27,10 @@
     width: 585px;
     margin-left: 60px;
     padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .send{
     margin-top: 30px;

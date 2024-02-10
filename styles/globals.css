@@ -34,12 +34,14 @@
 
     /* margin */
 
-    --m-4xl: 50px;
-    --m-3xl: 40px;
-    --m-2xl: 30px;
+    --m-5xl: 50px;
+    --m-4xl: 40px;
+    --m-3xl: 30px;
+    --m-2xl: 24px;
     --m-xl: 20px;
     --m-md: 15px;
     --m-sm: 10px;
+    --m-l: 8px;
 }
 
 h1 {
@@ -190,43 +192,44 @@ p {
     justify-content: center;
 }
 
-.test {
+.ml-40 {
     margin-left: 40px;
 }
 
-.proto-button {
-    width: 129px;
-    height: 35px;
+/* BUTTON STYLES */
+
+button {
+    padding: var(--m-l) var(--m-2xl);
+    border: none;
     border-radius: var(--br-sm);
-    transition: 0.3s all;
+
     font-size: var(--font-sm);
     font-weight: var(--font-bold);
     letter-spacing: 0.4px;
+
     color: var(--bg);
-    /* background-color: var(--unActive); */
-    border: none;
-}
-
-.unactive-button {
-    background-color: var(--unActive);
-
-}
-
-.blue-button {
     background-color: var(--accent);
+    
+    transition: 0.3s all;
 }
 
-.unactive-button {
-    background-color: var(--unActive);
-}
-
-.blue-button:hover {
+button:hover {
     background-color: var(--blue-bg);
 }
 
-.blue-button:active {
+button:disabled {
+    background-color: var(--unActive);
+}
+
+button:disabled:hover {
+    background-color: var(--unActive);
+}
+
+button:active {
     background-color: var(--dark-blue-bg);
 }
+
+/* BUTTON STYLES */
 
 .partners-content {
     justify-content: space-between;
@@ -287,6 +290,10 @@ p {
     font-weight: 700;
     color: var(--main-text);
     padding: 4px 2px;
+}
+
+.input-group.active:has(textarea) p{
+    top: -40%;
 }
 
 .input-group p {

@@ -65,7 +65,7 @@
 }
 .aboutCompany{
     width: 982px;
-    margin-left: 50px;
+    margin-left: var(--m-5xl);
 }
 .aboutCompany p{
     color: var(--main-text);
