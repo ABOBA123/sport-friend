@@ -24,4 +24,25 @@ function initInput(){
     }
 }
 
+function blockedButton(){
+    const nameInput = document.getElementById('nameInput')
+    const emailInput = document.getElementById('emailInput')
+    const phoneInput = document.getElementById('phoneInput')
+    const unActiveButton = document.getElementById('unActiveButton')
+    if (nameInput.value === "" || emailInput.value === "" || phoneInput.value === ""){
+        unActiveButton.classList.add('unactive-button');
+        unActiveButton.disabled = true; 
+    }
+    else {
+        unActiveButton.classList.remove('unactive-button');
+        unActiveButton.classList.add('blue-button');
+        unActiveButton.disabled = false; 
+    }
+    nameInput.addEventListener("input", blockedButton);
+    emailInput.addEventListener("input", blockedButton);
+    phoneInput.addEventListener("input", blockedButton);
+}
+
+
+blockedButton()
 initInput()
