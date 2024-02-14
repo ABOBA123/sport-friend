@@ -4,25 +4,36 @@ table {
     margin-bottom: 150px;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 20px;
     text-align: start;
+    border-bottom: 1px solid var(--input-border);
+
 }
+.first-proposal{
+    position: relative;
+}
+
 .Service{
+    
     margin-right: 400px;
     padding-left: 60px;
     white-space: nowrap;
     vertical-align: top;
 }
-.actice-table {
-    border: 1px solid transparent;
-    transition: border 0.9s ease; 
-}
-
-.actice-table:hover {
+.active-table {
     border: 1px solid var(--accent);
+    border-radius: 10px;
+    /* position: absolute;
+    bottom: 0; */
 }
-
+.active-table1  {
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    /* position: absolute;
+    bottom: 0; */
+}
 .clarification {
     color: var(--second-text);
 }
