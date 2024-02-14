@@ -9,21 +9,24 @@ th, td {
     padding: 20px;
     text-align: start;
     border-bottom: 1px solid var(--input-border);
-
 }
+
+.active-table{
+    background: #f3f3f3;
+}
+
 .first-proposal{
     position: relative;
 }
 
 .Service{
-    
     margin-right: 400px;
     padding-left: 60px;
     white-space: nowrap;
     vertical-align: top;
 }
 .active-table {
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
     border-radius: 10px;
     /* position: absolute;
     bottom: 0; */
