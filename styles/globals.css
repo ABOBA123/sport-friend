@@ -49,6 +49,15 @@ h1 {
     font-size: var(--font-xl);
 }
 
+.hideScrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hideScrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
 .blue-text {
     color: var(--accent);
     position: relative;
@@ -71,13 +80,28 @@ h1 {
 .underline{
     text-decoration: underline;
 }
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+   
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+ul, li, body{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: var(--main-text);
     background: var(--bg);
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 p {
@@ -224,16 +248,16 @@ button:hover {
     background-color: var(--blue-bg);
 }
 
+button:active {
+    background-color: var(--dark-blue-bg);
+}
+
 button:disabled {
     background-color: var(--unActive);
 }
 
 button:disabled:hover {
     background-color: var(--unActive);
-}
-
-button:active {
-    background-color: var(--dark-blue-bg);
 }
 
 /* BUTTON STYLES */
@@ -352,6 +376,14 @@ button:active {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.services-footer{
+    width: 174px;
+}
+
+.services-footer ul{
+    /* padding-inline-start: 0px; */
 }
 
 @media screen and (max-width: 1340px) {
