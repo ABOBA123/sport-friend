@@ -118,8 +118,18 @@ figure.sixteen-nine-img img {
 .employees{
     gap: 42px;
 }
-
-
+.wrap-footer{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.w-100{
+    width: 100%;
+}
+@media screen and (max-width: 1340px) {
+    .aboutCompany {
+        width: 738px;
+    }
+}
 @media screen and (max-width: 1200px) {
     .employee_avatar {
         width: 218px;
@@ -127,25 +137,51 @@ figure.sixteen-nine-img img {
         display: flex;
         justify-content: center;
     }
+
 }
+@media screen and (max-width: 1100px) {
+    .aboutCompany {
+        width: 550px;
+    }
+    .employees{
+        overflow-x: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .aboutCompany {
+        width: 400px;
+        margin-left: 0;
 
-
-
+    }
+}
 @media screen and (max-width: 768px) {
-    .servises-block{
-        position: static;
+    .aboutCompany {
         width: 100%;
-
+        margin-left: 0;
+    }
+    .new-font-size{
+        font-size: var(--font-rt);
+    }
+    .adaptive-ing-none{
+        display: none;
+    }
+    .servises-block{
+        width: 100%;
         height: 94px;
-
+        margin-bottom: 25px;
+        
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        
+        position: static;
+        
+        overflow: auto;
     }
-
+    .servises-block button {
+        flex-shrink: 0;
+    }
     .service-wrapper{
         flex-direction: column;
     }
@@ -155,6 +191,17 @@ figure.sixteen-nine-img img {
     }
     .employees{
         overflow-x: scroll;
+    }
+    .adaptive-786-margin{
+        margin-left: 25px;
+    }
+    .under-header {
+        height: 150px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        color: #EBF5FE;
+        background: linear-gradient(to left, #479FF8, #0081FF);
+        border-radius: 15px;
     }
 }
 
