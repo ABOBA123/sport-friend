@@ -83,6 +83,7 @@
 .under-header {
     width: 100%;
     height: 300px;
+    position: relative;
     align-items: center;
 }
 
@@ -92,6 +93,8 @@ figure.sixteen-nine-img {
     margin: 0;
     padding-top: 56.25%;
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     background: linear-gradient(288.75deg, #595959 2.2%, #3C3C3C 78.38%);
     border-radius: var(--br-xl);
@@ -118,19 +121,32 @@ figure.sixteen-nine-img img {
 .employees{
     gap: 42px;
 }
-.wrap-footer{
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 .w-100{
     width: 100%;
+}
+.substrate{
+    width: 900px;
+    height: 150px;
+    border-radius: 15px;
+
+    background-color: var(--main);
+}
+.substrate-text{
+    margin-left: 25px;
+}
+.adaptive-img-none{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 @media screen and (max-width: 1340px) {
     .aboutCompany {
         width: 738px;
     }
-}
-@media screen and (max-width: 1200px) {
+    .substrate{
+        width: 550px;
+    }
     .employee_avatar {
         width: 218px;
         height: 218px;
@@ -143,6 +159,14 @@ figure.sixteen-nine-img img {
     .aboutCompany {
         width: 550px;
     }
+    .substrate{
+        width: 550px;
+        position: absolute;
+        z-index: 1;
+    }
+    .adaptive-img-none{
+        width: 500px;
+    }
     .employees{
         overflow-x: auto;
     }
@@ -151,18 +175,47 @@ figure.sixteen-nine-img img {
     .aboutCompany {
         width: 400px;
         margin-left: 0;
-
     }
-}
-@media screen and (max-width: 768px) {
+    .servises-block{
+        width: 100%;
+        height: 94px;
+        margin-bottom: 25px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        position: static;
+        
+        overflow: auto;
+    }
+    .substrate{
+        width: 400px;
+        height: 200px;
+    }
+    .adaptive-img-none{
+        position: absolute;
+        right: 0;
+        width: 420px;
+    }
+    .service-wrapper{
+        flex-direction: column;
+    }
     .aboutCompany {
         width: 100%;
         margin-left: 0;
     }
+    .servises-block button {
+        flex-shrink: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+
     .new-font-size{
         font-size: var(--font-rt);
     }
-    .adaptive-ing-none{
+    .adaptive-img-none{
         display: none;
     }
     .servises-block{
@@ -179,9 +232,7 @@ figure.sixteen-nine-img img {
         
         overflow: auto;
     }
-    .servises-block button {
-        flex-shrink: 0;
-    }
+
     .service-wrapper{
         flex-direction: column;
     }
@@ -192,8 +243,9 @@ figure.sixteen-nine-img img {
     .employees{
         overflow-x: scroll;
     }
-    .adaptive-786-margin{
-        margin-left: 25px;
+    .substrate{
+        background: none;
+        width: 100%;
     }
     .under-header {
         height: 150px;
