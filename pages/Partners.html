@@ -24,6 +24,21 @@ figure.sixteen-nine-img img {
     width: 100%;
     transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 992px) {
+    .flex-row.column-adaptive{
+        flex-direction: column;
+    }
+    .sixteen-nine-img{
+        margin: 0;
+    }
+    .partners-text{
+        width: 100%;
+    }
+    .adaptive-button{
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+}
 </style>
 <body>
     <div class="container">
@@ -32,55 +47,37 @@ figure.sixteen-nine-img img {
                 <img class="ShariX-icon" src="../images/sharix-logo 1.svg" alt="sharix-logo">
                 <p>ShariX OpenTemplate</p>
             </div>
-
-            <div class="flex-row-center">
-                <div id="burgerMenu" class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div id="popup" class="popup display-none">
-                    <ul class="decoration-none popup-burger-text list-none">
-                        <a class="cursor-pointer popup-burger-text clicked-reference" href="../pages/AboutUs.html">
-                            <li >О нас</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                            <li>Услуги</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                            <li>Партнерам</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                            <li>Контакты</li>
-                        </a>
-                        <a>
-                            <li>
-                            <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-
-                    <ul id="menu" class="menu-text decoration-none">
-                        <a class="cursor-pointer clicked-reference" href="../pages/AboutUs.html">
-                            <li class="blue-text">О нас</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                            <li>Услуги</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                            <li>Партнерам</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                            <li>Контакты</li>
-                        </a>
-                        <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                    </ul>
+            <div id="popup" class="popup">
+                <ul id="menu" class="menu-text decoration-none fixed-width">
+                    <a class="cursor-pointer clicked-reference " href="../pages/AboutUs.html">
+                        <li class="blue-text">О нас</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
+                        <li>Услуги</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
+                        <li>Партнерам</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
+                        <li>Контакты</li>
+                    </a>
+                    <div class="cover-enter-icon">
+                    <button id="login" class="blue-text clicked-reference login-btn display-none">Регистрация</button>
+                    <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
+                    </div>
+                </ul>
             </div>
+            <div id="burgerMenu" class="flex-row-center display-none">
+                <div  class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
         </header>
         <div>
-            <div class="flex-row partners-content" style="justify-content: space-between; margin-bottom: 308px;">
+            <div class="flex-row column-adaptive partners-content" style="justify-content: space-between; margin-bottom: 308px;">
                 <div>
                     <h1>Партнерам</h1>
                     <p class="partners-text">Тут стоит рассказать о преимуществах сотрудничества с компанией, о том,
@@ -94,7 +91,7 @@ figure.sixteen-nine-img img {
                         соглашений.
                     </p>
                     <div style="width: 100%; display: flex; justify-content: end;">
-                        <button class="proto-button cursor-pointer">Подключиться</button>
+                        <button class="proto-button adaptive-button cursor-pointer">Подключиться</button>
                     </div>
                 </div>
                 <figure class="sixteen-nine-img">
@@ -103,7 +100,7 @@ figure.sixteen-nine-img img {
             </div>
         </div>
         <footer >
-            <div  class="flex-row content-between content-around wrap-footer footer-size">
+            <div  class="flex-row content-between content-around wrap-footer footer-size adaptive-content-768">
                 <div  class="flex-column services-footer">
                     <h4>О компании</h4>
                     <ul class="list-none footer-text cursor-pointer">

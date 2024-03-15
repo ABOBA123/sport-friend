@@ -45,5 +45,15 @@
     width: 700px;
 }
 
-
+@media screen and (max-width: 992px) {
+    .contacts-data{
+        margin: 0;
+    }
+    .contacts-text{
+        width: 100%;
+    }
+    .deranged-data{
+        width: 100%;
+    }
+}
 

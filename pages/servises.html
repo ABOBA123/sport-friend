@@ -16,97 +16,50 @@
                 <img class="ShariX-icon" src="../images/sharix-logo 1.svg" alt="sharix-logo">
                 <p>ShariX OpenTemplate</p>
             </div>
-
-            <div class="flex-row-center">
-                <div id="burgerMenu" class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div id="popup" class="popup display-none">
-                    <ul class="decoration-none popup-burger-text list-none">
-                        <a class="cursor-pointer popup-burger-text clicked-reference" href="../pages/AboutUs.html">
-                            <li >О нас</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                            <li>Услуги</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                            <li>Партнерам</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                            <li>Контакты</li>
-                        </a>
-                        <a>
-                            <li>
-                            <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-
-                    <ul id="menu" class="menu-text decoration-none">
-                        <a class="cursor-pointer clicked-reference" href="../pages/AboutUs.html">
-                            <li class="blue-text">О нас</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                            <li>Услуги</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                            <li>Партнерам</li>
-                        </a>
-                        <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                            <li>Контакты</li>
-                        </a>
-                        <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                    </ul>
+            <div id="popup" class="popup">
+                <ul id="menu" class="menu-text decoration-none fixed-width">
+                    <a class="cursor-pointer clicked-reference " href="../pages/AboutUs.html">
+                        <li class="blue-text">О нас</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
+                        <li>Услуги</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
+                        <li>Партнерам</li>
+                    </a>
+                    <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
+                        <li>Контакты</li>
+                    </a>
+                    <div class="cover-enter-icon">
+                    <button id="login" class="blue-text clicked-reference login-btn display-none">Регистрация</button>
+                    <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
+                    </div>
+                </ul>
             </div>
+            <div id="burgerMenu" class="flex-row-center display-none">
+                <div  class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
         </header>
         <h1>Уважаемые господа!</h1>
         <p>Здесь можно описать основные направления деятельности компании, перечень услуг, которые она оказывает, а
             также примеры проектов, выполненных компанией в рамках этих услуг. Важно, чтобы информация была
             представлена ясно и понятно, с подробным описанием услуг и их преимуществ для клиентов. Также можно
             указать цены на услуги, если это применимо, или описать систему ценообразования компании.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th class="text-center">Название</th>
-                    <th>Описание</th>
-                    <th>Стоимость</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="first-proposal" class="first-proposal" >
-                    <td class="numbers">1</td>
-                    <td class="Service">Дружбан-Плюс</td>
-                    <td id="first-text" class="clarification">Это система управления государством, источником власти в которой является
-                        сам народ. Именно
-                        народ решает, какие законы и нормы необходимы для гармоничного существования и развития
-                        государства. Таким образом, каждый человек в демократическом обществе получает определенный
-                        набор свобод и обязательств сформированных с учетом интересов всего сообщества. Исходя из
-                        вышесказанного, можно заключить, что демократия – это возможность для каждого человека
-                        свободно участвовать в непосредственном управлении своим государством, обществом и личной
-                        судьбой в конечном счете.</td>
-                    <td><b>50 000 руб.</b></td>
-                </tr>
-                <tr id="second-proposal" class="first-proposal">
-                    <td class="numbers">2</td>
-                    <td class="Service">Дружбан-Прем</td>
-                    <td class="clarification">Это система управления государством, источником власти в которой является
-                        сам народ. Именно народ решает, какие законы и нормы необходимы для гармоничного существования и
-                        развития государства. Таким образом, каждый человек в демократическом обществе
-                        Получает определенный набор свобод и обязательств сформированных с учетом интересов всего
-                        сообщества. Исходя из вышесказанного, можно заключить, что демократия – это возможность для
-                        каждого человека свободно участвовать в непосредственном управлении своим государством,
-                        обществом и личной судьбой в конечном счете.</td>
-                    <td><b>50 000 руб.</b></td>
-                </tr>
-            </tbody>
-        </table>
+        <div id = "informationTable" class="information-table">
+            <div class="tabular-line flex-row">
+                <b>#</b>
+                <b>Название</b>
+                <b>Описание</b>
+                <b>Стоимость</b>
+            </div>
+        </div>
         <footer >
-            <div  class="flex-row content-between content-around wrap-footer footer-size">
+            <div  class="flex-row content-between content-around wrap-footer footer-size adaptive-content-768">
                 <div  class="flex-column services-footer">
                     <h4>О компании</h4>
                     <ul class="list-none footer-text cursor-pointer">
@@ -149,10 +102,6 @@
         </footer>
     </div>
     <script src="../scripts/servises.js">
-
     </script>
-    
-    
 </body>
-
 </html>

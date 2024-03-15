@@ -1,27 +1,33 @@
-function Burger() {
-    const menu = document.getElementById('menu');
-    const popup = document.getElementById('popup');
+function Burger(){
     const burgerMenu = document.getElementById('burgerMenu');
-
-    function toggleMenu(){
-        if (window.matchMedia('(max-width: 992px)').matches) {
-            menu.classList.add('display-none');
-            popup.classList.add('display-none');
-        } else {
-            menu.classList.remove('display-none');
+    const popup = document.getElementById('popup');
+    const login = document.getElementById('login');
+    function togglePopup(){
+        if(popup.classList.contains('display-none')){
+            popup.classList.remove('display-none')
+        }
+        else{
+            popup.classList.add('display-none')
         }
     }
+    burgerMenu.addEventListener("click", togglePopup)
 
-    toggleMenu();
+    function checkWidth() {
+        if(window.innerWidth < 992){
+            login.classList.remove('display-none')
+            popup.classList.add('display-none');
+            burgerMenu.classList.remove('display-none');
+            }
+            else{
+            popup.classList.remove('display-none');
+            burgerMenu.classList.add('display-none');
+            login.classList.add('display-none')
+            }
+    }
+    checkWidth()
 
-    burgerMenu.addEventListener('click', () => {
-        popup.classList.toggle('display-none');
-        popup.classList.toggle('items-center');
-    });
-    
-    window.addEventListener('resize', () => {
-        toggleMenu();
-    });
+    window.addEventListener('resize', checkWidth);
 }
-
-Burger();
+window.onload = function() {
+    Burger();
+};

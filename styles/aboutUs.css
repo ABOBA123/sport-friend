@@ -209,9 +209,14 @@ figure.sixteen-nine-img img {
     .servises-block button {
         flex-shrink: 0;
     }
+    .servises-block h1 {
+        margin-bottom: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
-
+    .servises-block h1 {
+        margin-bottom: 0;
+    }
     .new-font-size{
         font-size: var(--font-rt);
     }

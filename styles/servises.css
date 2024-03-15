@@ -44,7 +44,40 @@ th, td {
     vertical-align: top;
 }
 
+.information-table{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.information-table p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.tabular-line{
+    width: 100%;
+    border-radius: var(--br-md);
+    border: 1px solid var(--bg);
+    transition: 0.3s all;
+}
 
-
-
-
+.tabular-line:hover{
+    border: 1px solid var(--accent);
+}
+.information-table :nth-child(1):hover{
+    border: 1px solid var(--bg);
+}
+.tabular-line >*:nth-child(1){
+    width: 88px;
+    display: flex;
+    justify-content: center;
+}
+.tabular-line >*:nth-child(2){
+    width: 168px;
+}
+.tabular-line >*:nth-child(3){
+    width: 932px;
+}
+.tabular-line >*:nth-child(4){
+    width: 146px;
+    display: flex;
+    align-items: center;
+}

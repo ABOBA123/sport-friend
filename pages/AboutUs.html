@@ -25,52 +25,34 @@
                     <img class="ShariX-icon" src="../images/sharix-logo 1.svg" alt="sharix-logo">
                     <p>ShariX OpenTemplate</p>
                 </div>
-
-                <div class="flex-row-center">
-                    <div id="burgerMenu" class="burger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div id="popup" class="popup display-none">
-                        <ul class="decoration-none popup-burger-text list-none">
-                            <a class="cursor-pointer popup-burger-text clicked-reference" href="../pages/AboutUs.html">
-                                <li >О нас</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                                <li>Услуги</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                                <li>Партнерам</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                                <li>Контакты</li>
-                            </a>
-                            <a>
-                                <li>
-                                <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                                </li>
-                            </a>
-
-                        </ul>
-                    </div>
-
-                        <ul id="menu" class="menu-text decoration-none">
-                            <a class="cursor-pointer clicked-reference" href="../pages/AboutUs.html">
-                                <li class="blue-text">О нас</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                                <li>Услуги</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
-                                <li>Партнерам</li>
-                            </a>
-                            <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
-                                <li>Контакты</li>
-                            </a>
-                            <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
-                        </ul>
+                <div id="popup" class="popup">
+                    <ul id="menu" class="menu-text decoration-none fixed-width">
+                        <a class="cursor-pointer clicked-reference " href="../pages/AboutUs.html">
+                            <li class="blue-text">О нас</li>
+                        </a>
+                        <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
+                            <li>Услуги</li>
+                        </a>
+                        <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
+                            <li>Партнерам</li>
+                        </a>
+                        <a class="cursor-pointer clicked-reference" href="../pages/Contacts.html">
+                            <li>Контакты</li>
+                        </a>
+                        <div class="cover-enter-icon">
+                        <button id="login" class="blue-text clicked-reference login-btn display-none">Регистрация</button>
+                        <img class="enter-icon" src="../images/enter.svg" alt="sharix-logo">
+                        </div>
+                    </ul>
                 </div>
+                <div id="burgerMenu" class="flex-row-center display-none">
+                    <div  class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
             </header>
 
             <div class="flex-row service-wrapper">
