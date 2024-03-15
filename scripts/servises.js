@@ -41,11 +41,11 @@ for ( let item of items){
     div.addEventListener('click', function(){
         if(div.classList.contains('active')){
             div.classList.remove('active')
-            textContent.innerHTML = item.text
+            textContent.innerHTML = item.text.slice(0, 150)
         }
         else{
             div.classList.add('active')
-            textContent.innerHTML = item.text.slice(0, 150)
+            textContent.innerHTML = item.text
         }
     })
 
