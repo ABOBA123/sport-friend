@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    <div id="backgroundPopup" class="background-popup display-none">
+        <div id="tablePopup" class="table-popup">
+            <img id = "redCross" class="redCross" src="../images/RedCross.svg" alt="../images/RedCross.svg">
+            <h3 id="proposalPopup" class="proposalPopup"></h3>
+            <p id="contentPopup" class="contentPopup"></p>
+        </div>
+    </div>
     <div class="container">
         <header class="menu flex-row-center">
             <div class="flex-row-center sharix-menu-text">
@@ -19,10 +26,10 @@
             <div id="popup" class="popup">
                 <ul id="menu" class="menu-text decoration-none fixed-width">
                     <a class="cursor-pointer clicked-reference " href="../pages/AboutUs.html">
-                        <li class="blue-text">О нас</li>
+                        <li>О нас</li>
                     </a>
                     <a class="cursor-pointer clicked-reference" href="../pages/servises.html">
-                        <li>Услуги</li>
+                        <li  class="blue-text">Услуги</li>
                     </a>
                     <a class="cursor-pointer clicked-reference" href="../pages/Partners.html">
                         <li>Партнерам</li>
@@ -50,14 +57,11 @@
             также примеры проектов, выполненных компанией в рамках этих услуг. Важно, чтобы информация была
             представлена ясно и понятно, с подробным описанием услуг и их преимуществ для клиентов. Также можно
             указать цены на услуги, если это применимо, или описать систему ценообразования компании.</p>
-        <div id = "informationTable" class="information-table">
-            <div class="tabular-line flex-row">
-                <b>#</b>
-                <b>Название</b>
-                <b>Описание</b>
-                <b>Стоимость</b>
-            </div>
+            
+        <div id="informationTable" class="information-table">
+            
         </div>
+
         <footer >
             <div  class="flex-row content-between content-around wrap-footer footer-size adaptive-content-768">
                 <div  class="flex-column services-footer">
@@ -101,7 +105,7 @@
             </div>
         </footer>
     </div>
-    <script src="../scripts/servises.js">
-    </script>
+    <script src="../scripts/servises.js"></script>
+    <script src="../scripts/burger.js"></script>
 </body>
 </html>

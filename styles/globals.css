@@ -283,7 +283,6 @@ button:disabled:hover {
 
 .partners-content {
     justify-content: space-between;
-    margin-bottom: 308px;
 }
 
 .partners-text {
@@ -528,5 +527,5 @@ button:disabled:hover {
 
 }
 .display-none{
-    display: none;
+    display: none !important;
 }
