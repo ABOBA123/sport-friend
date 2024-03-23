@@ -33,8 +33,6 @@ function resize() {
     `
     for ( let item of items){
 
-
-
         let div = document.createElement('div')
         div.classList.add("tabular-line")
         div.classList.add("flex-row")
@@ -57,7 +55,7 @@ function resize() {
         div.appendChild(textContent)
         div.appendChild(cost)
     
-        if( window.screen.width < 576){
+        if(window.innerWidth < 576){
             textContent.innerHTML = `<p class="blue-text">Подробнее...</p>`
             backgroundPopup.addEventListener('click', function(e){
                 e.stopPropagation()
@@ -80,6 +78,7 @@ function resize() {
         }
 
         div.addEventListener('click', function(){
+            if(window.innerWidth < 576){ return }
             let arr = Array.from(informationTable.children)
             for (let item of arr){
             if(item.classList.contains('active') && item.id !== div.id){
