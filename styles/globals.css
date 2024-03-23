@@ -81,15 +81,13 @@ h1 {
     text-decoration: underline;
 }
 
-/* Скрываем scrollbar для Chrome, Safari и Opera */
 .example::-webkit-scrollbar {
     display: none;
   }
    
-  /* Скрываем scrollbar для IE, Edge и Firefox */
   .example {
-    -ms-overflow-style: none;  /* IE и Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
   }
 
 ul, li, body{
@@ -341,17 +339,6 @@ button:disabled:hover {
 .input-group:has(textarea) p{
     top: -40%;
 }
-/* .input-group.active p {
-    top: -110%;
-    left: -2%;
-    font-weight: 700;
-    color: var(--main-text);
-    padding: 4px 2px;
-}
-
-.input-group.active:has(textarea) p{
-    top: -40%;
-} */
 
 .input-group p {
     margin-left: 10px;
